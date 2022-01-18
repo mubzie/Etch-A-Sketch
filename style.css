@@ -13,18 +13,19 @@ header {
   text-align: center;
   font-size: 64px;
 }
-.maincontainer {
+
+.main-container {
   display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
 .setting {
   display: flex;
-  flex-direction: column;
   gap: 30px;
   justify-content: center;
   align-items: center;
-  width: 30vw;
+  margin: 50px auto;
 }
 
 .color-selection {
@@ -40,18 +41,29 @@ button {
   font-size: 18px;
   width: 200px;
   height: 40px;
+  cursor: pointer;
 }
+
 .grid-container {
+  margin: 30px auto;
+  border: 1px solid black;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70vw;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 400px;
 }
 
 .main-grid {
-  border: 1px solid black;
-  width: 400px;
-  height: 400px;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  box-sizing: border-box;
+  border: 0.1px solid black;
+}
+
+.child {
+  width: 25px;
+  height: 25px;
 }
 
 footer {
