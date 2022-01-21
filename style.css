@@ -46,24 +46,17 @@ button {
 
 .grid-container {
   margin: 30px auto;
-  border: 1px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  width: 400px;
-  height: 400px;
 }
 
 .main-grid {
-  margin: 0;
-  width: 25px;
-  height: 25px;
-  box-sizing: border-box;
-  border: 0.1px solid black;
+  display: flex;
 }
 
 .child {
+  box-sizing: border-box;
   width: 25px;
   height: 25px;
+  border: 1px solid black;
 }
 
 footer {
