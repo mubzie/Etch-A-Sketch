@@ -18,13 +18,7 @@ header {
   font-weight: 900;
 }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.setting {
+#setting {
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -32,14 +26,7 @@ header {
   margin: 50px auto;
 }
 
-.color-selection {
-  border: 1px solid black;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-}
-
-button {
+.btn {
   border: none;
   background-color: white;
   font-size: 18px;
@@ -48,22 +35,30 @@ button {
   cursor: pointer;
 }
 
+.black:focus,
+.rainbow:focus,
+.eraser:focus,
+.clear:focus {
+  border: 1px solid;
+  box-shadow: 4px 8px black;
+}
+
 .grid-container {
+  background-color: white;
   margin: 0 auto 40px;
   width: 400px;
   height: 400px;
+  box-shadow: rgba(0 0 0/ 50%) 0px 5px 10px;
 }
 
 .main-grid {
   display: flex;
-  flex-shrink: 0;
 }
 
 .child {
   box-sizing: border-box;
   width: 25px;
   height: 25px;
-  border: 1px solid black;
 }
 
 footer {
