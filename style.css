@@ -18,7 +18,13 @@ header {
   font-weight: 900;
 }
 
-#setting {
+.main-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#selection {
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -35,10 +41,10 @@ header {
   cursor: pointer;
 }
 
-.black:focus,
-.rainbow:focus,
-.eraser:focus,
-.clear:focus {
+.btn:focus,
+.btn:focus,
+.btn:focus,
+.btn:focus {
   border: 1px solid;
   box-shadow: 4px 8px black;
 }

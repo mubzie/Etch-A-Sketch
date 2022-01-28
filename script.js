@@ -1,6 +1,6 @@
 const container = document.querySelector('.grid-container');
 const blackBtn = document.querySelector('#black-mode');
-const rainbowBtn = document.querySelector('#rainbow-mode');
+const randomBtn = document.querySelector('#rainbow-mode');
 const eraseBtn = document.querySelector('#erase-mode');
 const clearBtn = document.querySelector('#clear-mode');
 
@@ -8,8 +8,7 @@ blackBtn.addEventListener('click', () => {
         currentMode = 'black';
 });
 
-
-rainbowBtn.addEventListener('click', () => {
+randomBtn.addEventListener('click', () => {
         currentMode = 'randomColor'; 
 })
 
@@ -28,7 +27,6 @@ function createDiv(grid){
        for (j = 0; j < grid; j++) {
         let childGrid = document.createElement('div');
         mainGrid.appendChild(childGrid).classList = "child pixel";
-        
        }
        container.appendChild(mainGrid).classList = "main-grid";
    }
@@ -42,7 +40,7 @@ function createDiv(grid){
                            e.target.style.backgroundColor = 'black'
                            break;
                            case 'randomColor':
-                           randomColor = '#' +Math.floor(Math.random()*16777215).toString(16).toUpperCase();
+                           randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
                            e.target.style.backgroundColor = randomColor;
                            break;
                            case 'eraser':
