@@ -1,0 +1,11 @@
+{
+  "name": "etch-a-sketch",
+  "version": "1.0.0",
+  "description": "this project is based on sketch-pad kinda of game.\r what i learned?\r i learned more about calllback function\r a proper understanding of what event does\r i learned more about eventlistener\r live demo: https://mubzie.github.io/Etch-A-Sketch/",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
